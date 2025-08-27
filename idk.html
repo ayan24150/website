@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Responsive Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px 50px;
+            gap: 30px;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ff6a6a;
+        }
+
+        .logo {
+            margin-right: auto;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff6a6a;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
+            gap: 50px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .circle {
+            width: 280px;
+            height: 280px;
+            background: #ff4d4d;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .text {
+            max-width: 500px;
+        }
+
+        .text h1 span {
+            color: #ff6a6a;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin: 10px 0px;
+        }
+
+        .text h2 span {
+            color: #ff6a6a;
+        }
+
+        .text p {
+            color: white;
+            margin: 15px 0 25px;
+            line-height: 1.5;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social a {
+            width: 45px;
+            height: 45px;
+            border: 2px solid #ff6a6a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff6a6a;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            background: #ff6a6a;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid #ff6a6a;
+            color: #ff6a6a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff6a6a;
+            color: white;
+        }
+
+
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+            }
+
+            .main {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .text {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 15px;
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .circle {
+                width: 200px;
+                height: 200px;
+            }
+
+            .text h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Ayan</div>
+        <a href="#" class="active">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+        <div class="image-container">
+            <div class="circle">
+                <img src="cut.jpg" alt="profile">
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>Hi Its <span>Noobini Pizanini</span></h1>
+            <h2>I'm a <span>Brainrot Developer</span></h2>
+            <p>
+                Skibidi, Skibidi toilet, gyatt, mewing, sigma, bussin’, let him cook, fanum tax, grimace shake, alpha,
+                baby
+                gronk, Ohio, lil bro, brisket song…
+            </p>
+
+            <div class="social">
+                <a href="git.png"></a>
+                <a href="insta.jpg"></a>
+                <a href="link.jpg"></a>
+                <a href="proper.jpg"></a>
+            </div>
+
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </div>
+</body>
+
+</html>
